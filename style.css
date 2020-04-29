@@ -1,0 +1,134 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+.strong {
+  color: black;
+}
+
+.header-text {
+  margin: -10px 0 0 70px;
+  line-height: 0.5em;
+  font-size: 1.4em;
+}
+
+.header-text-two {
+  font-size: 2.6em;
+}
+
+content {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  margin: 0 40px 0 40px;
+}
+
+content p,
+ul {
+  margin: 20px 40px 20px 40px;
+}
+
+header,
+blockquote {
+  font-family: "Abril Fatface", cursive;
+}
+
+header {
+  margin: 0;
+}
+
+blockquote::before {
+  content: "”";
+  font-size: 3em;
+  position: relative;
+  top: -25px;
+  left: 5px;
+}
+
+blockquote {
+  display: block;
+  margin: 0;
+  padding: 10px 0 10px 0;
+  background: grey;
+  position: relative;
+  color: white;
+  font-size: 1.5em;
+  height: 100px;
+}
+
+blockquote p {
+  font-family: "Josefin Sans", sans-serif;
+
+  font-size: 1.8em;
+  line-height: 1em;
+}
+
+p,
+ul {
+  font-family: "Josefin Sans", sans-serif;
+  color: grey;
+  font-size: 1.3em;
+  font-weight: bold;
+  line-height: 1.4em;
+}
+
+.title {
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.3em;
+  margin: 30px 40px 20px 40px;
+  line-height: 1.4em;
+}
+
+.subtitle {
+  font-family: "Josefin Sans", serif;
+  font-size: 1.3em;
+  /*font-style: italic;*/
+  margin: 20px 40px 20px 40px;
+  line-height: 1.4em;
+}
+
+.isubtitle {
+  font-family: "Merriweather", serif;
+  font-size: 0.8em;
+  font-style: italic;
+  margin: -15px 40px 20px 40px;
+  line-height: 1.4em;
+}
+
+.content {
+  font-family: "Josefin Sans", sans-serif;
+  color: grey;
+  font-size: 1em;
+}
+
+blockquote p {
+  position: relative;
+  top: -100px;
+  left: 40px;
+  color: white;
+  z-index: 4;
+}
+
+.header-image {
+  background-image: url("http://stayathome-syllabus.greenfox.academy/week01/assets/first-website-header.png");
+  height: 65%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header-text {
+  text-align: left;
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  color: black;
+}
