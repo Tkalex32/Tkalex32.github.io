@@ -1,134 +1,123 @@
-body,
-html {
-  height: 100%;
-  margin: 0;
+body {
+  /*background-image: linear-gradient(to bottom right, #808080, #bfbfbf);*/
+  background: #242f44;
+  flex-wrap: wrap;
+  height: 100vh;
+  font-family: 'Oswald', sans-serif;
 }
 
-hr {
-  border: 1px solid black;
+figure {
+  display: inline-block;
+  margin: 10px 0px;
+  position: relative;
 }
 
-.strong {
-  color: black;
-}
-
-.header-text {
-  margin: -10px 0 0 70px;
-  line-height: 0.5em;
-  font-size: 1.4em;
-}
-
-.header-text-two {
-  font-size: 2.6em;
-}
-
-content {
+figcaption {
   position: absolute;
-  left: 15%;
-  right: 15%;
-  margin: 0 40px 0 40px;
+  bottom: 0px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #8c6b48;
+  width: 100%;
 }
 
-content p,
-ul {
-  margin: 20px 40px 20px 40px;
+figcaption h1,
+figcaption p {
+  margin: 2px 5px;
 }
 
-header,
-blockquote {
-  font-family: "Abril Fatface", cursive;
+#show {
+  width: 750px;
+  display:flex;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: auto;
+  vertical-align: middle;
 }
 
-header {
-  margin: 0;
-}
-
-blockquote::before {
-  content: "”";
-  font-size: 3em;
+#show img
+{
+  max-width: 600px;
+  height: 400px;
+  margin: auto;
+  display: flex;
   position: relative;
-  top: -25px;
-  left: 5px;
+  vertical-align: middle;
 }
 
-blockquote {
-  display: block;
-  margin: 0;
-  padding: 10px 0 10px 0;
-  background: grey;
-  position: relative;
-  color: white;
-  font-size: 1.5em;
-  height: 100px;
+/*#photo {
+  border: 1px solid #8c6b48;
+}*/
+
+.left {
+  max-width: 50px;
+  background: white;
+  display:flex;
+  margin: auto;  
 }
 
-blockquote p {
-  font-family: "Josefin Sans", sans-serif;
-
-  font-size: 1.8em;
-  line-height: 1em;
+.right {
+  max-width: 50px;
+  background: white;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  display:flex;
+  margin: auto;
 }
 
-p,
-ul {
-  font-family: "Josefin Sans", sans-serif;
-  color: grey;
-  font-size: 1.3em;
-  font-weight: bold;
-  line-height: 1.4em;
+.left:hover,
+.right:hover,
+.pics img:hover {
+  cursor: pointer;
+ }
+
+.left img,
+.right img {
+  width: 50px;
+  max-height: 90px;
+}
+
+#thumb {
+  height: 60px;
+  display: flex;
+  margin-top: 20px;
+}
+
+#thumb img {
+  background: white;
+  width: 60px;
+  height: 50px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.pics {
+  margin: 10px auto;
+  display: flex;
+}
+
+#thumb .selected img {
+  background: #8c6b48;
+  -webkit-box-shadow: 3px 3px 3px #777;
+  -moz-box-shadow: 3px 3px 3px #777;
+  box-shadow: 3px 3px 3px #777;
+}
+
+#thumb img:hover {
+  background: #8c6b48;
 }
 
 .title {
-  text-transform: uppercase;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.3em;
-  margin: 30px 40px 20px 40px;
-  line-height: 1.4em;
-}
-
-.subtitle {
-  font-family: "Josefin Sans", serif;
-  font-size: 1.3em;
-  /*font-style: italic;*/
-  margin: 20px 40px 20px 40px;
-  line-height: 1.4em;
-}
-
-.isubtitle {
-  font-family: "Merriweather", serif;
-  font-size: 0.8em;
-  font-style: italic;
-  margin: -15px 40px 20px 40px;
-  line-height: 1.4em;
-}
-
-.content {
-  font-family: "Josefin Sans", sans-serif;
-  color: grey;
-  font-size: 1em;
-}
-
-blockquote p {
-  position: relative;
-  top: -100px;
-  left: 40px;
-  color: white;
-  z-index: 4;
-}
-
-.header-image {
-  background-image: url("http://stayathome-syllabus.greenfox.academy/week01/assets/first-website-header.png");
-  height: 65%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.header-text {
-  text-align: left;
+  display: none;
   position: absolute;
-  top: 60%;
-  left: 15%;
-  color: black;
+  background: white;
+  color: #8c6b48;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.thumbnail:hover .title {
+  display: block;
 }
