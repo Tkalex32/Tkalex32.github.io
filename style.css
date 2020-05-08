@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   /*background-image: linear-gradient(to bottom right, #808080, #bfbfbf);*/
   background: #242f44;
@@ -120,4 +121,128 @@ figcaption p {
 
 .thumbnail:hover .title {
   display: block;
+=======
+body {
+  /*background-image: linear-gradient(to bottom right, #808080, #bfbfbf);*/
+  background: #242f44;
+  flex-wrap: wrap;
+  height: 100vh;
+  font-family: 'Oswald', sans-serif;
+}
+
+figure {
+  display: inline-block;
+  margin: 10px 0px;
+  position: relative;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #8c6b48;
+  width: 100%;
+}
+
+figcaption h1,
+figcaption p {
+  margin: 2px 5px;
+}
+
+#show {
+  width: 750px;
+  display:flex;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: auto;
+  vertical-align: middle;
+}
+
+#show img
+{
+  max-width: 600px;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  position: relative;
+  vertical-align: middle;
+}
+
+/*#photo {
+  border: 1px solid #8c6b48;
+}*/
+
+.left {
+  max-width: 50px;
+  background: white;
+  display:flex;
+  margin: auto;  
+}
+
+.right {
+  max-width: 50px;
+  background: white;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  display:flex;
+  margin: auto;
+}
+
+.left:hover,
+.right:hover,
+.pics img:hover {
+  cursor: pointer;
+ }
+
+.left img,
+.right img {
+  width: 50px;
+  max-height: 90px;
+}
+
+#thumb {
+  height: 60px;
+  display: flex;
+  margin-top: 20px;
+}
+
+#thumb img {
+  background: white;
+  width: 60px;
+  height: 50px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.pics {
+  margin: 10px auto;
+  display: flex;
+}
+
+#thumb .selected img {
+  background: #8c6b48;
+  -webkit-box-shadow: 3px 3px 3px #777;
+  -moz-box-shadow: 3px 3px 3px #777;
+  box-shadow: 3px 3px 3px #777;
+}
+
+#thumb img:hover {
+  background: #8c6b48;
+}
+
+.title {
+  display: none;
+  position: absolute;
+  background: white;
+  color: #8c6b48;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.thumbnail:hover .title {
+  display: block;
+>>>>>>> 8cf406249358bdb648ee14d1d1d31346e5204b4b
 }
